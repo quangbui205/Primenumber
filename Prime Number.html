@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = +prompt("Nhap vao so luong so nguyen to can in ra ")
+    let num =2;
+    for(i=1 ; i <= count; i++)
+    {
+        while(num >1)
+        {
+            let counter = 0 ;
+            let half = Math.sqrt(num);
+            for(j=2; j<=half; j++)
+            {
+                if(num%j==0){
+                    counter++;
+                }
+            }
+            if (counter == 0)
+            {
+                document.write(num + " " + "-" + " ");
+                num = num + 1;
+                break;
+            }
+            else
+            {
+                num = num +1;
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
